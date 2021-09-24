@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculadora</title>
+</head>
+<style>
+    body{
+ background-color: #438A6C ;
+width: 100px;
+height: 100px;
+ }
+
+.lo{
+  position: absolute;
+  top: 10%;
+  left:1%;
+}
+.la{
+  position: absolute;
+  top: 20%;
+  left:1%;
+}
+.lola{
+	 position: absolute;
+  top: 15%;
+  left:1%;
+}
+.chi{
+ position: absolute;
+  top: 3%;
+  left:1%;
+
+}
+.samu{
+	 position: absolute;
+  top: 30%;
+  left:1%;
+}
+.sa{
+ position: absolute;
+  top: 25%;
+  left:1%;
+
+}
+.chil{
+ 
+  position: absolute;
+            top: 10px;
+            left: 600px;
+            width: 170px;
+            height: 80px;
+            background:#81B19D ;
+            border:solid #000000 2px;
+
+}
+.suma{
+	  
+            position: absolute;
+            top: 150px;
+            left: 400px;
+            width: 150px;
+            height: 150px;
+            background:#81B19D;
+            border:solid #000000 2px;
+            font-size: 50px;
+
+        }
+.resta{
+	  
+            position: absolute;
+            top: 150px;
+            left: 600px;
+            width: 150px;
+            height: 150px;
+            background:#81B19D ;
+            border:solid #000000 2px;
+            font-size: 50px;
+
+        }
+.resultado{
+	  
+            position: absolute;
+            top: 320px;
+            left: 380px;
+            width: 850px;
+            height: 150px;
+            background:#81B19D ;
+            border:solid #000000 2px;
+            font-size: 50px;
+
+        }
+    .comen{
+	  
+            position: absolute;
+            top: 500px;
+            left: 380px;
+            width: 850px;
+            height: 150px;
+            background:#81B19D ;
+            border:solid #000000 2px;
+            font-size: 50px;
+            font-size: 25px;
+           
+
+        }
+.mul{
+	  
+            position: absolute;
+            top: 150px;
+            left: 800px;
+            width: 150px;
+            height: 150px;
+            background:#81B19D;
+            border:solid #000000 2px;
+            font-size: 50px;
+
+        }
+ .divi{
+	  
+            position: absolute;
+            top: 150px;
+            left: 1000px;
+            width: 150px;
+            height: 150px;
+            background:#81B19D;
+            border:solid #000000 2px;
+            font-size: 50px;
+
+        }
+</style>
+<body background="fondo.jpg">
+<div class="fondo"></div>
+
+<form>
+	<label class="chil"><h1>calculadora</h1></label><br>
+	<label class="chi">numero 1:</label><br>
+	<input type="text" id="numero1" placeholder="numero(1)" class="lo"><br><br>
+    <label class="lola">numero 2:</label><br>
+	<input type="text" id="numero2" placeholder="numero(2)" class="la">
+</form>
+<div class="suma" onclick="era()" id="´suma1">suma</div>
+<div class="resta" onclick="er()" id="´suma1">resta</div>
+<div class="mul" onclick="e()" id="´suma1">multi</div>
+<div class="divi" onclick="d()" id="´suma1">divi</div>
+<div class="resultado" onclick="era()" id="suma1"></div>
+
+<script>
+    function era(){
+        x=Number(numero1.value);
+        y=Number(numero2.value);
+        suma= x+y;
+        console.log(suma);
+        suma1.innerHTML=suma;
+
+    }
+    function er(){
+        x=Number(numero1.value);
+        y=Number(numero2.value);
+        resta= x-y;
+        console.log(resta);
+        suma1.innerHTML=resta;
+
+    }
+    function e(){
+        x=Number(numero1.value);
+        y=Number(numero2.value);
+        mul= x*y;
+        console.log(mul);
+        suma1.innerHTML=mul;
+
+    }
+    function d(){
+        x=Number(numero1.value);
+        y=Number(numero2.value);
+        divi= x/y;
+        console.log(divi);
+        suma1.innerHTML=divi;
+
+    }
+</script>
+</body>
+</html>

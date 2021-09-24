@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>actividad numero 1</title>
+</head>
+<style>
+body{
+ background-color: #7FA59E ;
+width: 30px;
+height: 10px;
+ }
+ .ti{
+	position: absolute;
+	top: 3%;
+	left: 15%;
+	width: 70%;
+	height: 20%;
+	background:#4E7263 ;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: sans-serif;
+	overflow: hidden;
+	font-size: 50px;
+	font-family:a3;
+}
+.pre2{
+	position: absolute;
+	top: 4%;
+	left: 10%;
+	width: 0%;
+	height: 0%;
+	background: gray;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	transition: all 0.5s;
+}
+.pre1{
+	position: absolute;
+	top: 2%;
+	left: 10%;
+	width: 0%;
+	height: 0%;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: sans-serif;
+	overflow: hidden;
+	font-size: 200%;
+	transition: all 0.5s;
+}
+.lo{
+	position: absolute;
+	top: 170px;
+	left: 50px;
+	width: 20%;
+	height: 20%;
+	background:  black;
+    color: white;
+    font-family: sans-serif;
+border-radius: 20px;}
+.la{
+	position: absolute;
+	top: 320px;
+	left: 50px;
+	width:20%;
+	height: 20%;
+	background:  black;
+border-radius: 20px;
+color: white;
+    font-family: sans-serif;
+
+}
+.fir{
+	position: absolute;
+	top: 150px;
+	left: 1000px;
+	width:20%;
+	height: 20%;
+	border-radius: 20px;
+    color: white;
+    font-family: sans-serif;
+
+}
+.sa{
+	position: absolute;
+	top: 35%;
+	left: 35%;
+	width:20%;
+	height: 20%;
+	background:  black;
+border-radius: 20px;
+color: white;
+    font-family: sans-serif;
+}
+
+</style>
+<body>
+<div class="pre2" id="most3" ><img src="neo.png"></div>
+<div class="pre2" id="most2" onmousemove="posi(event)" class="" ></div>
+<div class="pre2" id="most4" >
+<div><a href="calculadora.html" class="sa"><center><h1>calculadora</center>  </a></div></div>
+<div class="ti" id="tema2" onclick="ti()"><center><h1>neosistemas </center> </div>
+<div class="lo" id="tema1" onclick="inf2()"><center><h1>eje (1)</center></div>
+<div class="la" id="tema4" onclick="inf3()"><center><h1>eje (2)</center> </div>
+<div class=""  id="cua"></div>
+
+<script>
+	x=0;
+		function ti(){
+		most3.style.width=80+"%";
+		most3.style.height=90+"%";
+		crono=setTimeout(ti,1000);
+		x=x+1;
+		if(x==3){
+		clearInterval(crono);
+		most3.style.width=0+"%";
+		most3.style.height=0+"%";
+		}
+		}
+		u=0;
+		function inf2() {
+		most2.style.width=80+"%";
+		most2.style.height=90+"%";
+	    crono=setTimeout(inf2,1000);
+		u=u+1;
+		if(u==4){
+		clearInterval(crono);
+		most2.style.width=0+"%";
+		most2.style.height=0+"%";
+		}
+	    }
+	      	  y=0;
+	  
+	   function inf3() {
+		most4.style.width=80+"%";
+		most4.style.height=90+"%";
+	    crono=setTimeout(inf3,1000);
+		y=y+1;
+		if(y==2){
+		clearInterval(crono);
+		most4.style.width=0+"%";
+		most4.style.height=0+"%";
+		}
+	}
+
+		function posi(){
+			o=event.clientX;
+			p=event.clientY;
+			cua.innerHTML=" estas adentro Coordenadas: "+o+" "+p+"";
+		}
+
+  
+
+
+
+
+	 
+		</script>
+   </body>
+
+</html>
